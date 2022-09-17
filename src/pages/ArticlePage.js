@@ -10,7 +10,7 @@ const ArticlePage = () => {
             <h1>{article.title}</h1>
             <h3>{article.subtitle}</h3>
             {article.content.map(paragraph => (
-                <p>{paragraph}</p>
+                <p key={paragraph}>{paragraph}</p>
             ))}
         </>
     )
