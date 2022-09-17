@@ -1,7 +1,7 @@
 const articles = [
     {
         name: 'y-kien',
-        title: 'Ý Kiến Bạn Đọc',
+        title: 'Ý kiến bạn đọc',
         subtitle: `Những bên bán hàng thứ ba của Amazon`,
         content: [
             `Tiêu đề "Kiếm triệu đô từ tỉ đô của Bezos" trên số báo tháng 4.2021 đã gây tò mò. Bức tranh về thị trường thương mại điện tử lớn nhất thế giới, nơi không chỉ có quy mô thị trường và khối lượng sản phẩm giao dịch mang lại giá trị lợi nhuận, mà khi nó đạt đến một quy mô nhất định thì ngay chính sự khai thác trong quá trình của chuỗi cung ứng cũng có thể kiếm ra bộn tiền. Những người có lợi là người tiên phong áp dụng công nghệ và phần mềm để quản lý và tối ưu quy trình vận hành và giao dịch, cũng như các phương thức của marketing hiện đại phát huy hiệu quả khi tăng lượng khách hàng tương tác.`,
@@ -9,6 +9,15 @@ const articles = [
             `Lê My Khuyên, giảng viên khoa Tài Chính, ĐH Ngân hàng TP.HCM`
         ]
     },
+    {
+        name: 'thu-toa-soan',
+        title: 'Thư tòa soạn',
+        subtitle: `Dấu ấn vô hình`,
+        content: [
+            `Trong danh sách 2.755 tỉ phú do Forbes công bố năm 2022, có khoảng 120 vị tỉ phú có 90 pháp nhân doanh nghiệp đăng ký hoạt động theo pháp luật Việt Nam. Các công ty này tập trung chủ yếu trong ba lĩnh vực công nghệ, sản xuất, thực phẩm. Cơ cấu như vậy cũng phù hợp với dòng chảy FDI vào Việt Nam. Các doanh nghiệp kể trên cũng như khối FDI nói chung giữ vai trò quan trọng trong sự phát triển của nền kinh tế Việt Nam. Trong các mặt hàng dẫn đầu về giá trị kim ngạch xuất khẩu, một số do doanh nghiệp FDI đóng vai trò chủ chốt như xuất khẩu điện tử, điện thoại và linh kiện.`,
+            `Ảnh hưởng tích cực từ dòng vốn đầu tư của 90 doanh nghiệp do các tỉ phú sở hữu nói riêng và doanh nghiệp FDI nói chung là tạo công ăn việc làm, nghĩa vụ thuế với nhà nước, hay đóng góp vào tăng trưởng kim ngạch xuất khẩu cho nền kinh tế Việt Nam. Những tác động như vậy đều được thể hiện qua các số liệu thống kê nên dễ nhận biết. Có những đóng góp khác khó có thể đo lường, đánh giá bằng số liệu...`
+        ]
+    }
 ];
 
 export default articles;
