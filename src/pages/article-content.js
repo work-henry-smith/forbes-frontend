@@ -38,8 +38,8 @@ const articles = [
     },
 
     {
-        name: 'react-for-beginner',
-        title: 'React cho người mới bắt đầu',
+        name: 'react-for-beginner-1',
+        title: 'React cho người mới bắt đầu phần 1',
         subtitle: 'Cách tạo một ứng dụng từ a-z',
         content: [
             `1. Lời nói đầu`,
@@ -54,6 +54,27 @@ const articles = [
             `- Tại Terminal, chúng ta sẽ sử dụng npm (node package manager) để bắt đầu dự án: npx create-react-app {tên ứng dụng} sau đó hit enter. React sẽ tự động tải về và cài đặt một số thư mục để giúp các anh chị code, có thể kể đến là node_modules, public, src, .gitignore, package-lock.json, package.json.`,
             `- Sẽ có một số thư mục directories và files quan trọng, anh chị cần nhớ khi làm việc. Đó là ./public/index.html, ./src/App.js, ./src/App.css, và ./package.json. App.js là root component, là ông tổ của mọi components. Anh chị có thể hình dung đơn giản nó là gốc cây, là nơi khởi thủy của mọi chức năng khác, từ nội dung website, comment, like & upvote cho đến thanh navigation bar. Còn file App.css sẽ đảm nhận vai trò làm đẹp, để trang trí cho page, căn lề chỉnh dòng, font & size và nhiều thứ khác. Nói chung, làm đẹp thì vào App.css, làm chức năng thì vào App.js.`,
             `- Ok, bây giờ chúng ta bắt tay vào xây dựng website từ những viên gạch đầu tiên nào.`
+        ]
+    }, 
+
+    {
+        name: 'react-for-beginner-2',
+        title: 'React cho người mới bắt đầu phần 2',
+        subtitle: 'Cách tạo một ứng dụng từ a-z',
+        content: [
+            `4. Xây dựng tính năng`,
+            `- Mục tiêu của chúng ta là xây dựng một trang web. Một website thông thường sẽ có trang chủ Home Page, thông tin về chủ website và dịch vụ họ cung cấp About Us, và danh sách những bài viết Articles List. Ok here we go`,
+            `- Trong thư mục ./src, chúng ta tạo một thư mục directory tên là ./src/pages. Trong thư mục này, chúng ta sẽ tạo 6 components, là HomePage.js, AboutPage.js, ArticlesListPage.js, ArticlePage.js, article-content.js, và NotFoundPage.js`,
+            `- Ok, chúng ta sẽ xây dựng một trang chủ HomePage đơn giản. Anh chị vào file HomePage.js, sử dụng arrow function tạo một chức năng để hiển thị thông tin khi file mẹ App.js gọi về.`,
+            `- Xong phần HomePage, anh chị vào App.js để tích hợp import component <HomePage />`,
+            `- Tiếp tục ta sẽ xây dựng AboutPage. Những page này chỉ hiển thị thông tin, đơn giản, thường sử dụng heading <h1> <h3> và paragraph <p>. Chúng ta sẽ nhập thông tin về dịch vụ của chúng ta tại đây.`,
+            `- Sau khi có hai components là HomePage.js và AboutPage.js rồi, chúng ta muốn export chúng vào root component App.js. Đồng thời, anh chị cũng sẽ muốn hai components này có hai URLs xác định, có thanh Navigation Bar trên đầu của website.`,
+            `- Như anh chị có thể thấy trong root component <App.js />, chúng ta có import một component <NavBar />. Chức năng của nó là tạo ra thanh navigation bar, đồng thời cung cấp link để chúng ta có thể dễ truy cập. Hãy tưởng tượng sẽ bất tiện như thế nào nếu khách hàng phải nhập chính xác địa chỉ URL của bài viết. Thay vào đó, chúng ta sẽ sử dụng built-in component của React là Link và Router.`,
+            `- Chúng ta đã xong những phần râu ria rồi, giờ anh chị sẽ muốn tạo ra một component để chứa bài viết. Nó giống như một cái ly đựng nước, bài viết 1 khác nội dung bài viết 2, khác bài viết 3. Tuy nhiên, chúng sẽ sử dụng chung một cái khung, một component. Tôi đặt tên cho nó là <ArticlePage />`,
+            `- Có một built-in component mà chúng ta dùng là useParams(). Nó sẽ trả về một đối tượng object gồm cặp khóa key và giá trị value của các tham số động từ URLs, cái mà được so sánh bởi <Route path>. Nói nôm na là, mỗi bài viết có một địa chỉ URL duy nhất, và địa chỉ này là một property trong object articles trong file articles-content.js. Nếu URL trên thanh địa chỉ trùng với URL trong file articles-content.js, nó sẽ hiển thị nội dung. Nếu địa chỉ nhập không trùng với bất kỳ URL nào, nó sẽ hiển thị component <NotFoundPage />`,
+            `- Component chứa dữ liệu mà tôi dùng có tên là <article-content />. Nó là một array object có một số properties như name - để xác định URL của bài viết, title và subtitle - tương ứng với heading h1 và h3, contents - để chứa nội dung. Nếu muốn dùng URL để so sánh, anh chị chỉ cần dùng lệnh articles.name,...`,
+            `- Component <NotFoundPage /> sẽ được sử dụng trong trường hợp URL mà client nhập không match với bất kỳ URL nào trong article-content.js. Anh chị lưu ý là ta luôn export default cuối mỗi component, thì root component <App /> mới import và sử dụng được`,
+            `- `
         ]
     }
 ];
