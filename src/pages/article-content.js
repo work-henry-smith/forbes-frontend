@@ -38,7 +38,7 @@ const articles = [
     },
 
     // {
-    //     name: 'react-for-beginner1',
+    //     name: 'react-for-beginner-1',
     //     title: 'React cho người mới bắt đầu phần 1',
     //     subtitle: 'Cách tạo một ứng dụng từ a-z',
     //     content: [
@@ -58,7 +58,7 @@ const articles = [
     // }, 
 
     // {
-    //     name: 'react-for-beginner2',
+    //     name: 'react-for-beginner-2',
     //     title: 'React cho người mới bắt đầu phần 2',
     //     subtitle: 'Cách tạo một ứng dụng từ a-z',
     //     content: [
