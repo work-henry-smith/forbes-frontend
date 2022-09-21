@@ -4,6 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBb8Q20fZLOmrIbZ7uSCoCx075jFOGWH9Q",
+  authDomain: "my-forbes.firebaseapp.com",
+  projectId: "my-forbes",
+  storageBucket: "my-forbes.appspot.com",
+  messagingSenderId: "495320343812",
+  appId: "1:495320343812:web:9d00a4b82476fc8e565c51"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
